@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Fixed Header</title>
+    <style>
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        body {
+            margin-top: 60px; /* To prevent content from being hidden behind the header */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOIAAADfCAMAAADcKv+WAAAA/FBMVEX////+AADRExXqCAn3AwX6AgLmCgrVERLtBwfeDg70BAXwBgfYEBDiDAzXERDjDArfAADUAADonpvkAADfoJ/bAADaop/GAADqVVP//f/PW1vNAAD0zM////ztVFLnn5vjVVP96+vAAAD96+zIXF3/+fbSW1v54Nz+1NPpubbOeHfkNDX42dj/+fThe3rnbWzpX1zhYWDztbLYQELORULuq6fRNjLdgoLYJyXPJyrfdHHWdXX+8+3UUk7eSknql5byycLniILHGRfiJCLoQUDvxcbea2r6vbvpa2bktbPlHB/KaWfQgH341czQP0DTiYnDSUixAADBLi7ERkYStoJKAAAON0lEQVR4nO2dCXeaShvHqYoiuIBIbEK4iUmI2hjbmMWsrW1qc9Om6/3+3+UO4AbMDPM4A/c95+V/Upsuh/jz2WaGmQdJypUrV65cuXLlypUrV65cuXLlypUrV65cqcsRdBlB18m1oRwRFsBcIjdsNtruDget0dt3r/8K6XWy9hN09mWyNxh2swZyFq/+N053PDqvqyU50Cs5rlJUalxaSAqS/4JkKnrlYjLuLt01E8d1li/dvdemirhexZVISgRcB51L0439dnf9880IcvDOLGHgMHgRwJD9YoBKWEVfyJzG2Ww7GzwUe96POb08UWWM+WQsJNVRyYwIzeebY+pXl/dSVpTu+ETFGhBvRKIJKe5ZXEiZm1Eplk0E6aaM5mUZ5C3992TAhChMMmHYUYtRmfrF97U3kw6kI7kjE5dgmAKRHTBGF6isGJMUDRl8bP1rCiDETRkdNYKIvPWmL6VmQ68mtXQiXDJhhJHipCTAcrlZNu12Ony+3FuNZkJQvaAR4hERYB39KprWXWrO6u5ruErBSgjINBQjer/px6fpEN6f8wAmEVJTacA3VxM568V9GmO5LpiQYkOwm4YRm7rHKJbPke738eM1QUak55pyhLDZ1B+EM7pnMtWInMmUjhgnRIzHLmIUR7ktjeg2hA1rgIRhN/USq884EWnGbelSoeJhECk2BBf9KCGyY71eNsbiCCVpSBu0JcchezZNiEOfsOkZsd6slzs9cWnVfc8Xh3w1P0roqY4w6+Y//hBACOUHytQCbERoHIbNGBAiRE9WS9RotadTbZhk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" alt="Logo" style="width: 50px; vertical-align: middle;">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </header>
+
+    <div style="padding: 20px;">
+        <p>Scroll down to see the fixed header effect!</p>
+    </div>
+
+</body>
+</html>

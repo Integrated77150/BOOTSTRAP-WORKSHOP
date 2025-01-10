@@ -1,0 +1,68 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header Styling */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 10; /* Make sure header stays above the grid */
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Grid container styling */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    padding: 100px 20px 20px; /* Adjust padding to account for the fixed header */
+      background-color: #fff;
+      border: 1px solid #ddd;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+  }
+  
+  .card {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: box-shadow 0.15s ;
+  }
+
+  .card img:hover {
+    opacity: 0.8;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .card img:active {
+    opacity: 0.5;
+  }
+  
+  .card p {
+    background-color: #f9f9f9;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0;
+  }
+  
